@@ -35,4 +35,52 @@
     line-height: 1.75;
     color: var(--color-white);
   }
+  h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 80px;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+}
+
+/* Text outline utilities */
+.text-outline {
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent !important;
+  transition: all 0.3s ease;
+}
+
+.text-outline-hover {
+  -webkit-text-stroke: 1px #00ff99;
+  color: transparent !important;
+}
+
+/* Group hover effect for text outline */
+.group:hover .text-outline {
+  -webkit-text-stroke: 1px #00ff99;
 }
