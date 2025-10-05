@@ -29,9 +29,17 @@ const Home = () => {
                 variant={"outline"}
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                asChild
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
+                <a
+                  href="/Vaibhav Resume Updated.pdf"
+                  download="Vaibhav_Baliyan_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </a>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
