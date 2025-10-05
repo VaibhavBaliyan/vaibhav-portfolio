@@ -7,16 +7,16 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Frontend Development",
     description:
-      "Building responsive and dynamic websites using modern technologies.",
+      "Creating responsive, interactive user interfaces using React, Next.js, and modern CSS frameworks like Tailwind CSS.",
     href: "",
   },
   {
     num: "02",
-    title: "Mobile App Development",
+    title: "Backend Development",
     description:
-      "Creating user-friendly mobile applications for iOS and Android.",
+      "Building robust server-side applications, APIs, and databases using Node.js, Express, and modern backend technologies.",
     href: "",
   },
   {
