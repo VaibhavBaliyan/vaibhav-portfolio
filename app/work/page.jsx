@@ -42,16 +42,6 @@ const projects = [
   },
   {
     num: "02",
-    category: "Frontend Project",
-    title: "Zomato Landing Page",
-    desc: "Developed a responsive, pixel-perfect landing page using HTML and CSS to mimic Zomato's modern UI. Focused on creating an exact replica with attention to detail and responsive design principles.",
-    stack: [{ name: "HTML5" }, { name: "CSS3" }, { name: "Responsive Design" }],
-    image: "/assets/work/zomato-clone.png",
-    live: "#",
-    github: "#",
-  },
-  {
-    num: "03",
     category: "JavaScript Projects",
     title: "JavaScript Mini-Projects",
     desc: "Built multiple interactive applications including a Dice Roller for simultaneous multi-die rolling, Random Password Generator with customizable character sets, and Temperature Converter showcasing dynamic DOM manipulation.",
@@ -66,7 +56,7 @@ const projects = [
     github: "#",
   },
   {
-    num: "04",
+    num: "03",
     category: "AI Application",
     title: "AI Resume Analyzer",
     desc: "Currently developing an intelligent resume analysis tool that evaluates resumes against job descriptions, provides feedback, and suggests improvements. Features AI-powered analysis and detailed reporting.",
