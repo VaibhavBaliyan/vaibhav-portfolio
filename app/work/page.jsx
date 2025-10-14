@@ -36,7 +36,7 @@ const projects = [
       { name: "TMDb API" },
       { name: "LocalStorage" },
     ],
-    image: "/assets/work/movie-explorer.png",
+    image: "/assets/movies.png",
     live: "#",
     github: "#",
   },

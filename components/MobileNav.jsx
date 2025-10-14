@@ -1,16 +1,32 @@
 "use client";
 
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { Button } from "./ui/button";
 
 const links = [
-  { name: "home", path: "/" },
-  { name: "services", path: "/services" },
-  { name: "resume", path: "/resume" },
-  { name: "work", path: "/work" },
-  { name: "contact", path: "/contact" },
+  {
+    name: "home",
+    path: "/",
+  },
+  {
+    name: "services",
+    path: "/services",
+  },
+  {
+    name: "resume",
+    path: "/resume",
+  },
+  {
+    name: "work",
+    path: "/work",
+  },
+  {
+    name: "contact",
+    path: "/contact",
+  },
 ];
 
 const MobileNav = () => {
@@ -18,9 +34,10 @@ const MobileNav = () => {
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent  " />
+        <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
-      <SheetContent className={"flex flex-col"}>
+      <SheetContent className="flex flex-col">
+        {/* logo */}
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href="/">
             <h1 className="text-4xl font-semibold">
@@ -28,7 +45,9 @@ const MobileNav = () => {
             </h1>
           </Link>
         </div>
-        <nav className="flex flex-col gap-8 justify-center text-center">
+
+        {/* nav */}
+        <nav className="flex flex-col justify-center items-center gap-8">
           {links.map((link, index) => {
             return (
               <Link
@@ -43,6 +62,13 @@ const MobileNav = () => {
               </Link>
             );
           })}
+
+          {/* Mobile Hire Me Button */}
+          <Link href="/contact" className="mt-8">
+            <Button className="bg-accent hover:bg-accent/80 text-primary font-semibold w-full">
+              Hire Me
+            </Button>
+          </Link>
         </nav>
       </SheetContent>
     </Sheet>
