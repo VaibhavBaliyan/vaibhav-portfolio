@@ -27,7 +27,7 @@ const Photo = () => {
             priority
             quality={100}
             fill
-            alt=""
+            alt="Vaibhav Baliyan - Software Programmer"
             className="object-cover"
           />
         </motion.div>

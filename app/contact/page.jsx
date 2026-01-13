@@ -53,10 +53,10 @@ const Contact = () => {
     setSubmitStatus({ type: "", message: "" });
 
     try {
-      // EmailJS configuration with your actual credentials
+      // EmailJS configuration using environment variables
       const result = await emailjs.send(
-        "service_4iqm20h", // Your Service ID
-        "template_4fnjnu3", // Your Template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
           from_name: `${formData.firstname} ${formData.lastname}`,
           from_email: formData.email,
@@ -64,7 +64,7 @@ const Contact = () => {
           service: formData.service,
           message: formData.message,
         },
-        "sKLlBnmKiWkqH2_lD" // Your Public Key
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
 
       console.log("Email sent successfully:", result);
@@ -106,7 +106,7 @@ const Contact = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 0.4, delay: 2.4, ease: "easeIn" },
+        transition: { duration: 0.4, delay: 0.3, ease: "easeIn" },
       }}
       className="py-6"
     >

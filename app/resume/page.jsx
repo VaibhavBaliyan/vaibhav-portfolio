@@ -111,7 +111,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 0.4, ease: "easeIn", delay: 2.4 },
+        transition: { duration: 0.4, ease: "easeIn", delay: 0.3 },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >

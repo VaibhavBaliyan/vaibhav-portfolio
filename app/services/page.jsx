@@ -42,7 +42,7 @@ const Services = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { duration: 0.4, delay: 2.4, ease: "easeIn" },
+            transition: { duration: 0.4, delay: 0.3, ease: "easeIn" },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
