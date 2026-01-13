@@ -32,7 +32,7 @@ const Home = () => {
                 asChild
               >
                 <a
-                  href="/Vaibhav Resume Updated.pdf"
+                  href="/Vaibhav_Resume.pdf"
                   download="Vaibhav_Baliyan_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
